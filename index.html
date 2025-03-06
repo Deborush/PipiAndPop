@@ -6,27 +6,31 @@
     <title>Karaoke Pip & Pop</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-fuchsia-400 to fuchsia-500 flex flex-col item-center">
+<body class="flex flex-col items-center bg-gradient-to-r from-fuchsia-400 to fuchsia-500">
  
     <div class="text-center  mt-6">
         <img src="https://play-lh.googleusercontent.com/Ajs4tJwrBYzCdJDXP5mHiQukey8-0-PqACGNoUpOLsgntLaIU6tTj3QrWfzmMnSRMO0  " alt="" class="w-24 mx-auto">
         <h1 class="text-purple-800 font-serif p-2 text-3xl mt-2 font-bold">Bienvenidos al Karaoke Pip & Pop</h1>
+        <div class="flex items-center justify-center">
+        <img src="https://th.bing.com/th/id/R.89a6932050bd6c1cc8927412d9ee8e99?rik=y%2fTCOxOvqu95rA&pid=ImgRaw&r=0" alt="" class="w-40 block">
+        </div>
     </div>
  
     <!--Formulario para agregar canciones-->
  
-    <div class="flex justify-content item-center">
-    <form id="song_form">
-        <label for="song_name">Nombre de la canción</label>
-        <input id="song_name" type="text" required>
-        <label for="artist_name">Nombre del artista</label>
-        <input id="artist_name" type="text" required>
-        <label for="url_song">Ingresa el enlace de la canción</label>
-        <input id="url_song" type="url" required>
+        <form id="song_form" class="mt-4 bg-purple-200 p-6 rounded-lg shadow-lg w-80">
+            <label for="song_name" class="block text-sm font-medium text-gray-700">Nombre de la canción</label>
+            <input id="song_name" class="rounded-md w-full p-2 border" type="text" required>
  
-        <button class="bg-red-400  rounded-md" type="submit">Agregar a la lista</button>
-    </form>
-    </div>
+            <label for="artist_name" class="block text-sm font-medium text-gray-700">Nombre del artista</label>
+            <input id="artist_name" class="rounded-md w-full p-2 border" type="text" required>
+ 
+            <label for="url_song" class="block text-sm font-medium text-gray-700">Ingresa el enlace de la canción</label>
+            <input id="url_song" class="rounded-md w-full p-2 border" type="text" required>
+ 
+            <button class="block bg-purple-700 text-white text-lg mt-4 p-2 rounded-md w-full hover:bg-amber-600" type="submit">Agregar a la lista</button>
+        </form>
+
  
     <!--Lista de canciones-->
     <h2>Lista de reproducción</h2>
