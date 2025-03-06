@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaoke Pip & Pop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Bienvenidos al Karaoke Pip & Pop</h1>
-
+<body class="bg-gradient-to-r from-fuchsia-400 to fuchsia-500 flex flex-col item-center">
+ 
+    <div class="text-center  mt-6">
+        <img src="https://play-lh.googleusercontent.com/Ajs4tJwrBYzCdJDXP5mHiQukey8-0-PqACGNoUpOLsgntLaIU6tTj3QrWfzmMnSRMO0  " alt="" class="w-24 mx-auto">
+        <h1 class="text-purple-800 font-serif p-2 text-3xl mt-2 font-bold">Bienvenidos al Karaoke Pip & Pop</h1>
+    </div>
+ 
     <!--Formulario para agregar canciones-->
-
+ 
+    <div class="flex justify-content item-center">
     <form id="song_form">
         <label for="song_name">Nombre de la canción</label>
         <input id="song_name" type="text" required>
@@ -17,13 +23,14 @@
         <input id="artist_name" type="text" required>
         <label for="url_song">Ingresa el enlace de la canción</label>
         <input id="url_song" type="url" required>
-
-        <button type="submit">Agregar a la lista</button>
+ 
+        <button class="bg-red-400  rounded-md" type="submit">Agregar a la lista</button>
     </form>
-
+    </div>
+ 
     <!--Lista de canciones-->
     <h2>Lista de reproducción</h2>
-
+ 
     <ul id="play_list"></ul>
 </body>
 <script src="main.js"></script>
